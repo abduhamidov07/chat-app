@@ -5,7 +5,7 @@ import ChatsPage from "./ChatsPage/index.vue";
 </script>
 
 <template>
-  <AuthPage v-if="!user" @onAuth="handleAuth" />
+    <AuthPage v-if="!user" @onAuth="handleAuth" />
   <ChatsPage
     v-else
     v-bind:username="user.username"
